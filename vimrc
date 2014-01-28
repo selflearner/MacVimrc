@@ -2,7 +2,7 @@ set nu
 
 "设置菜单语言  
 set langmenu=zh_cn  
-
+set showcmd  
 set nocompatible               " be iMproved
 filetype off                   " required!
  

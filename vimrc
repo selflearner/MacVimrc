@@ -1,11 +1,13 @@
 set nu
 
 "设置菜单语言  
-set langmenu=zh_cn  
+set langmenu=zh_cn 
 set showcmd  
 set nocompatible               " be iMproved
 filetype off                   " required!
- 
+syntax on
+set hlsearch
+
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
  
@@ -20,6 +22,8 @@ set t_Co=256
 let g:Powerline_symbols = 'unicode'
 set encoding=utf8
 
+Bundle 'molokai'
+color molokai
 
 "Bundle 'Conque-Shell'
 

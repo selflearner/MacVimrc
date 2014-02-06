@@ -1,4 +1,6 @@
 set nu
+set guifont=Monaco:h18
+set history=100000
 
 "设置菜单语言  
 set langmenu=zh_cn 
@@ -24,8 +26,6 @@ set encoding=utf8
 
 Bundle 'molokai'
 color molokai
-
-"Bundle 'Conque-Shell'
 
 
 " My Bundles here:
@@ -54,6 +54,7 @@ filetype plugin indent on     " required!
 " NOTE: comments after Bundle command are not allowed..
 "
 "
-"
+"Conque Shell not successfull
+"Bundle 'Conque-Shell'
 map <F10> :ConqueTermTab bash<CR>
 

@@ -1,6 +1,12 @@
+"git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
 set nu
 set guifont=Monaco:h18
 set history=100000
+
+"中文乱码解决
+"set fileencodings=gb2312,gb18030,utf-8
+"set termencoding=utf-8
+"set encoding=prc 
 
 "设置菜单语言  
 set langmenu=zh_cn 
@@ -28,6 +34,11 @@ Bundle 'molokai'
 color molokai
 
 
+Bundle 'https://github.com/godlygeek/tabular'
+"   http://www.cnblogs.com/huanlei/archive/2012/04/13/2445550.html
+
+Bundle 'https://github.com/msanders/snipmate.vim'
+
 " My Bundles here:
 "
 " original repos on github
@@ -53,8 +64,36 @@ filetype plugin indent on     " required!
 " see :h vundle for more details or wiki for FAQ
 " NOTE: comments after Bundle command are not allowed..
 "
-"
+
+
+
+
+"manual
 "Conque Shell not successfull
 "Bundle 'Conque-Shell'
 map <F10> :ConqueTermTab bash<CR>
 
+
+
+
+"set encoding=UTF-8
+"set langmenu=zh_CN.UTF-8
+"language message zh_CN.UTF-8
+"set fileencodings=ucs-bom,utf-8,cp936,gb18030,big5,euc-jp,euc-kr,latin1
+"set fileencoding=utf-8
+
+
+"set fileencodings=ucs-bom,utf-8,cp936,gb18030,big5,euc-jp,euc-kr,latin1
+"字体设置
+"set guifont=Arial_monospaced_for_SAP:h16
+
+
+"Bundle "VimIM"
+":let g:vimim_map='c-bslash'	" Ctrl-\ 开关输入法
+":let g:vimim_map='m-space'	" Alt-空格键 开关输入法
+
+"自动切换输入法，插入模式自动转换为英文
+"se imd 
+"au InsertEnter * se noimd 
+"au InsertLeave * se imd 
+"au FocusGained * se imd 
